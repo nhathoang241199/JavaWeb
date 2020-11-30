@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&#38;display=swap" rel="stylesheet"/>
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="resources/css/style-starter.css"/>
+    <title>Đặt phòng Hotel 999 Stars</title>
+    <link rel="shortcut icon" type="image/png" href="resources/images/icon.png"/>
+  </head>
+    <body>
+        <header class="w3l-header-nav">
+	<!--/nav-->
+	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+		<div class="container">
+			<a class="navbar-brand" href="/BestHotel2/">
+				<img src="resources/images/icon.png" alt="Your logo" style="height:60px;" /> Hotels</a>
+			<!-- if logo is image enable this   
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item ">
+						<a class="nav-link" href="/BestHotel2/">TRANG CHỦ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/BestHotel2/test.xhtml">THÔNG TIN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/BestHotel2/services.xhtml">DỊCH VỤ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/BestHotel2/contact.xhtml">LIÊN HỆ</a>
+					</li>
+				</ul>
+				<a href="/BestHotel2/booking.xhtml" class="ml-3 book btn btn-secondary btn-style">Đặt phòng</a>
+			</div>
+		</div>
+	</nav>
+    </header>
+        
+        <section class="w3l-breadcrumb">
+    <div class="breadcrum-bg py-sm-5 py-4">
+        <div class="container py-lg-3">
+            <h2>Đặt phòng</h2>
+            <p><a href="/BestHotel2/">Trang chủ</a> &nbsp; / &nbsp; Đặt phòng</p>
+        </div>
+    </div>
+</section>   
+        
+         <!-- main-slider -->
+        <section>
+            <div class="slider">
+  
+                <div class="slides">
+                  <div id="slide-1">
+                      <img class="container-slide" src="resources/images/luxury_room.jpeg" alt=""/>
+                  </div>
+                  <div id="slide-2">
+                    <img class="container-slide" src="resources/images/luxury_room1.jpeg" alt=""/>
+                  </div>
+                  <div id="slide-3">
+                    <img class="container-slide" src="resources/images/luxury_room2.jpg" alt=""/>
+                  </div>
+                  <div id="slide-4">
+                    <img class="container-slide" src="resources/images/spa.jpg" alt=""/>
+                  </div>
+                  <div id="slide-5">
+                    <img class="container-slide" src="resources/images/bathroom1.jpg" alt=""/>
+                  </div>
+<!--                    <div id="slide-6">
+                    <img class="container-slide" src="resources/images/spa.jpg" alt=""/>
+                  </div>-->
+                </div>
+                    <a href="#slide-1">1</a>
+                    <a href="#slide-2">2</a>
+                    <a href="#slide-3">3</a>
+                    <a href="#slide-4">4</a>
+                    <a href="#slide-5">5</a>
+<!--                    <a href="#slide-6">6</a>-->
+              </div>  
+        </section>
+        <!-- /main-slider -->
+        <section class="w3l-availability-form" id="booking">
+    <!-- /w3l-availability-form-section -->
+    <div class="w3l-availability-form-main">
+        <div class="container pt-lg-3 pb-lg-5">
+            <div class="forms-top">
+                <div class="form-right">
+                    <div class="form-inner-cont">
+                        <h3 class="title-small">Đặt phòng</h3>
+                        <form action="search-results.html" method="post" class="signin-form">
+                            <div class="row book-form">
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Ngày check-in</label>
+                                    <input type="date" name="" placeholder="Date" required=""/>
+                                </div>
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Ngày check-out</label>
+                                    <input type="date" name="" placeholder="Date" required=""/>
+                                </div>
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Số người</label>
+                                    <select class="selectpicker">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                    </select>
+
+                                </div>
+                                
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Mã giảm giá</label>
+                                    <input type="text" name="" placeholder="Code"/>
+                                </div>
+                                
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Lời nhắn với chúng tôi</label>
+                                    <input type="text" name="" placeholder="Lời nhắn"/>
+                                </div>
+                                
+                                <div class="form-input col-md-4 col-sm-6 mt-3">
+                                    <label>Từ từ thêm vô</label>
+                                    <input type="text" name="" placeholder="nice"/>
+                                </div>
+                                <div class="bottom-btn col-md-4 col-sm-6 mt-3">
+<!--                                    <label>Kiểm tra phòng</label>
+                                    <button class="btn btn-style btn-secondary w-100 px-2">Kiểm tra phòng</button>-->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <section class="w3l-contact-1">
+    <div class="contacts-9 py-lg-5 py-sm-4">
+        <div class="container">
+            <div class="d-grid contact-view">
+                <div>
+                    <img src="resources/images/icon.png" style="width: 80%; "/>
+                </div>
+                <div class="map-content-9 mt-lg-0 mt-4">
+                    <form action="https://sendmail.w3layouts.com/submitForm" method="post">
+                        <div class="twice-two ">
+                            <input type="text" class="form-control hover-box" name="w3lName" id="w3lName" placeholder="Họ và tên"
+                                required=""/>
+                            <input type="tel" pattern="[0-9]{11}||[0-9]{10}" class="form-control hover-box" name="w3lNumber" id="w3lSender" placeholder="Số điện thoại"
+                                required=""/>
+                        </div>
+                        <div class="twice">
+                            <input type="email" class="form-control hover-box" name="w3lSender" id="w3lSubject"
+                                placeholder="Email" required=""/>
+                        </div>
+                        
+                        <div class="twice">
+                            <input type="IdCard" class="form-control hover-box" name="w3lIdCard" id="w3lSubject"
+                                placeholder="Số thẻ" required=""/>
+                        </div>
+                        <div class="twice-two">
+                            <input type="text" class="form-control hover-box" name="w3lName" id="w3lName" placeholder="Hiệu lực"
+                                required=""/>
+                            <input type="text" pattern="[0-9]{3}" class="form-control hover-box" name="w3lNumber" id="w3lSender" placeholder="CVV"
+                                required=""/>
+                        </div>
+                        <button type="submit" class="btn btn-contact hover-box" style = "box-shadow: 0 0 10px #f57b51;">Đặt phòng</button>
+                        <h style="padding: 15px 30px; margin: 20px auto 0; float: right; font-size: 30px;">Tổng tiền: 500$</h>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--       footer-->
+        <section class="w3l-footer-29-main">
+  <div class="footer-29 py-5">
+    <div class="container py-lg-4">
+      <div class="row footer-top-29">
+        <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1">
+          <h6 class="footer-title-29">Liên hệ chúng tôi</h6>
+          <ul>
+            <li>
+              <p><span class="fa fa-map-marker"></span> 999 Stars Hotel, Bitexco 
+                business, Viet Nam.</p>
+            </li>
+            <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> 0999-999-999</a></li>
+            <li><a href="mailto:hotels@mail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                999starshotel.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-sm-0 mt-5">
+
+          <ul>
+            <h6 class="footer-title-29">Các trang</h6>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="about.xhtml">Thông tin</a></li>
+            <li><a href="#blogposts">Các blogs</a></li>
+            <li><a href="contact.xhtml">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-3 mt-lg-0 mt-5">
+            <h6 class="footer-title-29">Blogs mới nhất</h6>
+            <div class="footer-post mb-4">
+              <a href="#url">Hotel đỉnh cao nhất Sài Gòn</a>
+              <p class="small"><span class="fa fa-clock-o"></span> September 21, 2020</p>
+            </div>
+            <div class="footer-post">
+              <a href="#url">Dịch vụ xịn nhất Việt Nam</a>
+              <p class="small"><span class="fa fa-clock-o"></span> October 18, 2020</p>
+            </div>
+            
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+          <h6 class="footer-title-29">Bản tin</h6>
+          <p>Hãy gửi mail cho chúng tôi và nhận được những thông tin mới nhất từ chúng tôi.
+           Chúng tôi sẽ không bao giờ chia sẽ email của bạn!</p>
+
+          <form action="#" class="subscribe" method="post">
+            <input type="email" name="email" placeholder="Your Email Address" required=""/>
+            <button><span class="fa fa-envelope-o"></span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="w3l-footer-29-main w3l-copyright">
+  <div class="container">
+    <div class="row bottom-copies">
+      <p class="col-lg-8 copy-footer-29">© 2020 Hotels. All rights reserved | Designed by <a
+          >Phan Nhân</a></p>
+
+      <div class="col-lg-4 main-social-footer-29">
+        <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+        <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+        <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+      </div>
+
+    </div>
+  </div>
+
+ <!-- move top -->
+ <button class="btn btn-style btn-secondary" style ="display: block;" onclick="topFunction()" id="movetop" title="Go to top">
+  &#10548;
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+</section>    
+
+<!--        scripts-->
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+
+<!-- Template JavaScript -->
+<script src="resources/js/jquery-3.3.1.min.js"></script>
+
+<script src="resources/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<script>
+  $(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+
+<!-- script for owlcarousel -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for owlcarousel -->
+<script src="resources/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});
+</script>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!--Slide show-->
+<!-- disable body scroll which navbar is in active -->
+
+<script src="resources/js/bootstrap.min.js"></script>
+
+
+
+    </body>
+</html>
